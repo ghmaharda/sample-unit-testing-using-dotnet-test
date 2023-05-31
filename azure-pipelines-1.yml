@@ -35,6 +35,7 @@ steps:
     testRunTitle: 'Test Case'
 
 - task: CmdLine@2
+  displayName: Pipeline Status
   inputs:
     script: |
       echo TODO Deployment
