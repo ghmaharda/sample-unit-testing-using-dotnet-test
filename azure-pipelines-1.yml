@@ -15,8 +15,8 @@ variables:
   buildConfiguration: 'Release'
 
 
-- task: SSH@0
+  
+- task: ShellScript@2
   inputs:
     runOptions: 'inline'
     inline: 'echo "Success"'
-    readyTimeout: '20000'
