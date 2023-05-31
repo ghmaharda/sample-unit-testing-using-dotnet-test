@@ -4,11 +4,11 @@ trigger:
 pool:
   name: IPO
 
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-  BASH_ENV: "~/.profile"
+# variables:
+#   solution: '**/*.sln'
+#   buildPlatform: 'Any CPU'
+#   buildConfiguration: 'Release'
+#   BASH_ENV: "~/.profile"
 
 
 steps:
