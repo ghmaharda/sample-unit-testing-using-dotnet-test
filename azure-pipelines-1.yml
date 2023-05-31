@@ -13,8 +13,10 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  BASH_ENV: "~/.profile"
 
-steps:
-  - bash: 
-    target: string  # container name or the word 'host'
+
+- task: SSH@0
+  inputs:
+    runOptions: 'inline'
+    inline: 'echo "Success"'
+    readyTimeout: '20000'
