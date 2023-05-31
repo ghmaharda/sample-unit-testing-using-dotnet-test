@@ -15,12 +15,6 @@ variables:
   buildConfiguration: 'Release'
   BASH_ENV: "~/.profile"
 
-steps: 
-- task: SSH@0
-  inputs:
-    sshEndpoint: localhost
-    runOptions: 'commands'
-    commands: |
-      #!/bin/bash
-      echo "Hello World"
-    readyTimeout: '20000'
+steps:
+  - script: |
+      printenv
