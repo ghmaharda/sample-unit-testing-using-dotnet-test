@@ -16,6 +16,9 @@ variables:
   BASH_ENV: "~/.profile"
 
 steps:
-- bash: string # Required as first property. An inline script. 
-  ## Other task inputs
-    
+- bash: |
+    which bash
+    echo Hello $name
+  displayName: Multiline Bash script
+  env:
+    name: Microsoft
