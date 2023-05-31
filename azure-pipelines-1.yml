@@ -13,10 +13,13 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  BASH_ENV: "~/.profile"
 
-
-  
-- task: ShellScript@2
+steps: 
+- task: SSH@0
   inputs:
-    runOptions: 'inline'
-    inline: 'echo "Success"'
+    runOptions: 'commands'
+    commands: |
+      #!/bin/bash
+      echo "Hello World"
+    readyTimeout: '20000'
