@@ -37,7 +37,9 @@ steps:
     arguments: '--configuration $(BuildConfiguration)'
     testRunTitle: 'Test Case'
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo TODO Deployment
+      
 
-steps:
-  - script: |
-      hostname
