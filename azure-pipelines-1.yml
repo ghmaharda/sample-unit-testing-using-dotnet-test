@@ -16,9 +16,5 @@ variables:
   BASH_ENV: "~/.profile"
 
 steps:
-- bash: |
-    which bash
-    echo Hello $name
-  displayName: Multiline Bash script
-  env:
-    name: Microsoft
+  - bash: 
+    target: string  # container name or the word 'host'
